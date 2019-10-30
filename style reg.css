@@ -1,0 +1,69 @@
+body {
+    background-image: url('pic5.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+height:800px;
+background-attachment:fixed;
+}
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color:white;
+    font-size: 110%;
+    text-align: center;
+    padding: 20px;
+padding-top: 10px;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color:black;
+    font-size:18px
+}
+.middle{
+  position: absolute;
+  top: 30%;
+  left: 12%;
+}
+.quote{
+font-family: "Joker",serif;
+color:rgb(40,40,40) ;
+  font-size: 32px;
+font-weight: bold;
+
+}
+
+.btn{
+  position: absolute;
+  top: 53%;
+  left: 16%;
+}
+.btn1{
+  padding: 10px 20px;
+    text-align: center;
+  font-size: 16px;
+  background-color:silver;
+ color: black;
+border-radius: 7px;
+border:none;
+margin:200px;
+    text-decoration: none;
+}
+.btn1:hover{
+
+    .
+  background-color:white;
+
+}
