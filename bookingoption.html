@@ -1,0 +1,127 @@
+<html>
+<head>
+  <title>Online Booking</title>
+  <link rel="stylesheet" href="stylemain.css">
+</head>
+    <style>
+        
+        .btn{
+            margin:15px 25px 15px;
+  position: absolute;
+  top: 53%;
+  left: 16%;
+}
+.btn1{
+  padding: 10px 20px;
+    text-align: center;
+  font-size: 16px;
+  background-color:silver;
+ color: black;
+border-radius: 7px;
+border:none;
+}
+.btn1:hover{
+  background-color:white;
+
+}
+        .b
+        {
+            margin:0 25px 25px 25px;
+            color:white;
+        }
+    </style>
+<body>
+
+    <div class="container">
+
+    <ul class="navmenu">
+      <li><a href="mainpage.html">Home</a></li>
+        <li><a href="contact.html">Follow</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Hotel Booking</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+      <p style="font-size:34px;color:white">Enter the following details to book your Room..</p>
+      <form class="b">
+          DESTINATION:
+            <br>
+            <input type="text"  placeholder="enter your destination" name="destination">
+            Check-in-date:
+            <input type="date" placeholder="DD/MM/YYYY" name="check-in">
+            Check-out-date:
+            <input type="date" placeholder="DD/MM/YYYY" name="out">
+            ROOMS:
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            ADULTS:
+            <select>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            CHILDREN:
+            <select>
+                <option value="0">0</option>
+                <option value="1">1</option> 
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+          <br>
+          <br><br>
+          PAYMENT:
+          <input type="radio" value="DEBIT CARD" name="payment">Debit Card
+<input type="radio" value="credit card" name="payment">Credit Card
+          <br>
+          <br>
+          MOBILE NUMBER:
+          <input type="number" placeholder="enter your number" name="number">
+<br>
+          <br>
+          <br>
+        YOUR EMAIL-ID:
+          <input type="text"  placeholder="@gmail.com" name="email">
+          <br>
+          <br>
+          <br>
+          <div class="btn">
+          <br>
+          <br>
+          <br>
+
+            <input type="button" class="btn1" onclick="check(this.form)" value="SUBMIT"/>
+          </div>
+        
+      </form>
+    
+        <script>
+            function check(form)
+            {
+                   
+                
+                if(form.destination.value=="" || form.email.value=="" || form.payment.value=="")
+                    {
+                window.alert("please enter your details first");
+                    }
+                else if((form.number.value).length<10 || (form.number.value).length>10)
+                        {
+                            alert("mobile number consist of 10 digits");
+                            form.number.focus();
+                            return false;
+                        }
+                else
+                {
+                    window.alert("Thnx for submitting");
+                }
+            
+            }
+        
+            
+      </script>
+
+</body>
+</html>
